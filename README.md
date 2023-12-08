@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+<h1>Cathy Lin</h1>
+<p></p> This is for my <\p> <a href="https://clinsim.github.io">personal website</a>
 </body>
 </html>
