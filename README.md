@@ -9,7 +9,7 @@
 <p>Readings(chem papers)</p>
 <p>Readings(casual)</p>
 <p>Cathy's stories</p>
-<p><a href="/doc/CatPhotosMemes.html">CatPhotosMemes</a></p>
+<p><a href="/cat/CatPhotosMemes.html">CatPhotosMemes</a></p>
 
 </body>
 </html>
