@@ -9,7 +9,7 @@
 <p><a href="/tutorials/Tutorial.html"><b>Tutorials</b></a></p>
 <p><a href="/reading/ThoughtforPapers.html"><b>Readings(chem papers)</b></a></p>
 <p><a href="/reading/ThoughtforBooks.html"><b>Readings(casual)</b></a></p>
-<p><a href="/aboutme/AboutMe.html"><b>Cathy's stories</b></a></p>
+<p><a href="/aboutme/AboutMe.html"><b>About me</b></a></p>
 <p><a href="/cat/CatPhotosMemes.html"><b>CatPhotosMemes</b></a></p>
 
 </body>
