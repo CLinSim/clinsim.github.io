@@ -1,35 +1,81 @@
 <!DOCTYPE html>
 <html>
-<body style="background-color:Linen;">
-  <style>
-  p{
-    line-height: 1.8;
-    margin-bottom: 20px;
-   }
-  </style>
-  <h1 style="font-family:sans-serif;font-size:150%;">Research Projects of C. Lin</h1>
-  
-<p style="font-family:sans-serif">
-    My research focuses on understanding heterogeneous catalysis through in silico approaches, exploring both catalysts and reaction environments. The intricate relationship between catalysts and their surroundings presents persistent challenges in catalyst design and reaction optimization. Given the complexity at the heterogeneous interface, direct experimental observation of the reaction process and its dynamic changes can be elusive. However, computational simulations serve as a robust tool to investigate these mechanisms and uncover the synergistic effects between the catalyst and the environment.<br> 
-    <br>
-    Linking microscopitc phenomena to macroscale observation needs the understanding of reaction theomedynamics and kinetics cross multiple time and space scales. My research methods include Density Functional Theory computation, microkinetic modelling, Monte Carlo simulation and continuum models for transport simulation.<br>
-    <br>
-    Here are my current and past research projects. The latest project is exhibited first.<br>
-</p>
-  <br>
+<head>
+    <title>Research Projects - C. Lin</title>
+    <style>
+        body {
+            background-color: Linen;
+            font-family: Arial, sans-serif;
+            line-height: 1.8;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: #333;
+        }
+        h1 {
+            font-family: sans-serif;
+            font-size: 150%;
+            margin-bottom: 20px;
+        }
+        p {
+            font-family: sans-serif;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+        .project-summary img {
+            width: 50%;
+            height: auto;
+            margin: 20px 0;
+        }
+        .project-summary a {
+            color: darkolivegreen;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .project-summary a:hover {
+            text-decoration: underline;
+        }
+        .highlight {
+            background-color: RosyBrown;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
 
-<img src="Project summary 01_DHandHML_MCH catalyst screening.png" style="width: 50%; height: auto;">
-  <br>
-<p style="font-family:sans-serif;font-size:100%;"> This project is to design catalyst for methyl cylcohexane (MCH) dehydrogenation using computational chemistry. MCH is a liquid organic hydrogen carrier that can be used to ship and store hydrogenation. But the dehydrogenation part from MCH to products toluene (TOL) and hydrogen are endothermic under room temperature and 1 atm pressure. In addition, previous catalysts, i.e. Pt nanoclusters, have too strong interaction with TOL, leading to the formation of side products benzene and methane, which increases the cost of product seperation and also the formation coke due to the accumulation of aromatic adsorbates. Therefore, we decide to search for a catalyst reducing toluene adsorption and improving MCH dehydrogenation reactivity though high-throughput catalyst screening. A metal promoter will be mixed with Pt to improve its catalytic performance and our aim to find the key information related to the composition of the catalyst.<br>
-  <br>
-    Computational catalyst screening for heterogeneous reactions involving large adsorbates and low-symmetry sites is challenging, due to the complexity of the molecule-site interaction and the cost of collecting enougth training data. Using inputs to a gaussian process regression model that are inspired by physical theories of chemisorption, we predict the adsorption energies of large hydrocarbon intermediates that are encountered during methyl cyclohexane dehydrogenation. Across bimetallic active sites of nanoclusters having varied shapes and compositions, our model yields mean absolute errors of 0.11 – 0.25 eV on test sets and utilizes under 100 datapoints per reaction intermediate. This model is integrated with a microkinetic model to identify promising catalysts. Modifying Pt nanoclusters with IB, IIB, and post-transition elements like Cu and Sn increases dehydrogenation rates, reduces unselective reactions, and lowers Pt utilization, consistent with prior experiments. This work presents a scalable, and efficient framework for designing bimetallic catalysts for dehydrogenating hydrogen carriers.<br>
-    <br>
-    <a href="https://chemrxiv.org/engage/chemrxiv/browse-dashboard">Details of the project can be found in our paper. </a>
-    <br>
-    <br>
-    <a href="https://github.com/CLinSim/ML_LOHC">Here are codes of the machine learning model and the microkinetic model. </a>
+<h1>Research Projects of C. Lin</h1>
+
+<p>
+    My research focuses on understanding heterogeneous catalysis through in silico approaches, exploring both catalysts and reaction environments. The intricate relationship between catalysts and their surroundings presents persistent challenges in catalyst design and reaction optimization. Given the complexity at the heterogeneous interface, direct experimental observation of the reaction process and its dynamic changes can be elusive. However, computational simulations serve as a robust tool to investigate these mechanisms and uncover the synergistic effects between the catalyst and the environment.
+</p>
+<p>
+    Linking microscopic phenomena to macroscale observation requires understanding reaction thermodynamics and kinetics across multiple time and space scales. My research methods include Density Functional Theory computation, microkinetic modeling, Monte Carlo simulation, and continuum models for transport simulation.
+</p>
+<p>
+    Here are my current and past research projects. The latest project is exhibited first.
 </p>
 
-  <p style="background-color:RosyBrown;"></p>
+<div class="project-summary">
+    <img src="Project summary 01_DHandHML_MCH catalyst screening.png" alt="Project Summary Image">
+    <p>
+        This project is to design a catalyst for methyl cyclohexane (MCH) dehydrogenation using computational chemistry. MCH is a liquid organic hydrogen carrier that can be used to ship and store hydrogen. However, the dehydrogenation process from MCH to products toluene (TOL) and hydrogen is endothermic under room temperature and 1 atm pressure. Previous catalysts, such as Pt nanoclusters, have strong interactions with TOL, leading to the formation of side products like benzene and methane, which increases the cost of product separation and coke formation due to the accumulation of aromatic adsorbates. Therefore, we decided to search for a catalyst that reduces toluene adsorption and improves MCH dehydrogenation reactivity through high-throughput catalyst screening. A metal promoter will be mixed with Pt to enhance its catalytic performance, and our aim is to find key information related to the catalyst composition.
+    </p>
+    <p>
+        Computational catalyst screening for heterogeneous reactions involving large adsorbates and low-symmetry sites is challenging due to the complexity of the molecule-site interaction and the cost of collecting enough training data. Using inputs to a Gaussian process regression model inspired by physical theories of chemisorption, we predict the adsorption energies of large hydrocarbon intermediates encountered during methyl cyclohexane dehydrogenation. Across bimetallic active sites of nanoclusters with varied shapes and compositions, our model yields mean absolute errors of 0.11 – 0.25 eV on test sets and utilizes under 100 data points per reaction intermediate. This model is integrated with a microkinetic model to identify promising catalysts. Modifying Pt nanoclusters with IB, IIB, and post-transition elements like Cu and Sn increases dehydrogenation rates, reduces unselective reactions, and lowers Pt utilization, consistent with prior experiments. This work presents a scalable and efficient framework for designing bimetallic catalysts for dehydrogenating hydrogen carriers.
+    </p>
+    <p>
+        <a href="https://chemrxiv.org/engage/chemrxiv/browse-dashboard">Details of the project can be found in our paper.</a>
+    </p>
+    <p>
+        <a href="https://github.com/CLinSim/ML_LOHC">Here are the codes of the machine learning model and the microkinetic model.</a>
+    </p>
+</div>
+
+<p class="highlight"></p>
 
 </body>
+</html>
