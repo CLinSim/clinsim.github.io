@@ -1,17 +1,71 @@
-
+<!DOCTYPE html>
 <html>
-<body style="background-color:cornsilk;">
+<head>
+    <title>Chuhong Lin's Website</title>
+    <style>
+        body {
+            background-color: cornsilk;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: #333;
+        }
+        header {
+            width: 100%;
+            background-color: darkolivegreen;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        main {
+            width: 60%;
+            max-width: 800px;
+            margin: 20px 0;
+        }
+        h1 {
+            margin: 0;
+        }
+        p {
+            margin: 15px 0;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            background-color: darkolivegreen;
+            color: white;
+            padding: 10px 15px;
+            margin: 5px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+        }
+        nav a:hover {
+            background-color: #556b2f;
+        }
+    </style>
+</head>
+<body>
 
-<h1>Cathy Lin</h1>
-<p style="background-color:darkolivegreen;"><br></p>
-<p>Hi, welcome to Cathy Lin's website. Cathy is a research fellow/programmer/cat lover/meme creator/poet et al. She is always curious about the world and nature, loving reading, writing and solving problems. Here you will find more about Cathy.</p>
-<p> Sorry this website is still under developing. I will keep adding content to this website.</p>
-<p><a href="/research/ResearchProject.html"><b>Research projects</b></a></p>
-<p><a href="/tutorials/Tutorial.html"><b>Tutorials</b></a></p> 
-<p><a href="/aboutme/AboutMe.html"><b>About me</b></a></p>
-<p><a href="/cat/CatPhotosMemes.html"><b>CatPhotosMemes</b></a></p>
+<header>
+    <h1>Cathy Lin</h1>
+</header>
 
+<main>
+    <p>Hi, welcome to Chuhong Lin's website. Cathy is a research fellow/programmer/cat lover. She is always curious about the world and nature, loving reading, writing, and solving problems. Here you will find more about Chuhong.</p>
+    <p>Please note that this website is still under development. I will continually add content and update the 'Research Projects' and 'Tutorials' sections. If you're interested in any specific models I have used in my previous work, feel free to contact me via email (chuhong.lin@ntu.edu.sg). I will prioritize adding those models to the Tutorials section. </p>
 
+    <nav>
+        <a href="/research/ResearchProject.html"><b>Research projects</b></a>
+        <a href="/tutorials/Tutorial.html"><b>Tutorials</b></a>
+        <a href="/aboutme/AboutMe.html"><b>About me</b></a>
+        <a href="/cat/CatPhotosMemes.html"><b>Cat Photos & Memes</b></a>
+    </nav>
+</main>
 
 </body>
 </html>
