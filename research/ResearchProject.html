@@ -59,21 +59,36 @@
     Here are my current and past research projects. The latest project is exhibited first.
 </p>
 
-<h2>(1) MCH dehydrogenation catalyst design_2022-2024</h2>
+<h2>Year 2024: Methyl cyclohexane dehydrogenation catalyst design via machine learning</h2>
     
 <div class="project-summary">
-    <img src="Project summary 01_DHandHML_MCH catalyst screening.png" alt="Project Summary Image">
+    <img src="RP2024_01_DHandHML_MCH catalyst screening.png" alt="Project Summary Image">
     <p>
-        This project is to design a catalyst for methyl cyclohexane (MCH) dehydrogenation using computational chemistry. MCH is a liquid organic hydrogen carrier that can be used to ship and store hydrogen. However, the dehydrogenation process from MCH to products toluene (TOL) and hydrogen is endothermic under room temperature and 1 atm pressure. Previous catalysts, such as Pt nanoclusters, have strong interactions with TOL, leading to the formation of side products like benzene and methane, which increases the cost of product separation and coke formation due to the accumulation of aromatic adsorbates. Therefore, we decided to search for a catalyst that reduces toluene adsorption and improves MCH dehydrogenation reactivity through high-throughput catalyst screening. A metal promoter will be mixed with Pt to enhance its catalytic performance, and our aim is to find key information related to the catalyst composition.
+Research background: This project is to design a catalyst for methyl cyclohexane (MCH) dehydrogenation using computational chemistry. Previous catalysts, such as Pt nanoclusters, have strong interactions with TOL, leading to the formation of side products like benzene and methane, which increases the cost of product separation and coke formation due to the accumulation of aromatic adsorbates. Therefore, we decided to search for a bimetallic nanocluster catalyst that reduces toluene adsorption and improves MCH dehydrogenation reactivity through high-throughput catalyst screening. But computational catalyst screening for heterogeneous reactions involving large adsorbates and low-symmetry sites is challenging due to the complexity of the molecule-site interaction and the cost of collecting enough training data. 
     </p>
     <p>
-        Computational catalyst screening for heterogeneous reactions involving large adsorbates and low-symmetry sites is challenging due to the complexity of the molecule-site interaction and the cost of collecting enough training data. Using inputs to a Gaussian process regression model inspired by physical theories of chemisorption, we predict the adsorption energies of large hydrocarbon intermediates encountered during methyl cyclohexane dehydrogenation. Across bimetallic active sites of nanoclusters with varied shapes and compositions, our model yields mean absolute errors of 0.11 – 0.25 eV on test sets and utilizes under 100 data points per reaction intermediate. This model is integrated with a microkinetic model to identify promising catalysts. Modifying Pt nanoclusters with IB, IIB, and post-transition elements like Cu and Sn increases dehydrogenation rates, reduces unselective reactions, and lowers Pt utilization, consistent with prior experiments. This work presents a scalable and efficient framework for designing bimetallic catalysts for dehydrogenating hydrogen carriers.
+Main conclusions: Using inputs to a Gaussian process regression model inspired by physical theories of chemisorption, we predict the adsorption energies of large hydrocarbon intermediates encountered during methyl cyclohexane dehydrogenation. Across bimetallic active sites of nanoclusters with varied shapes and compositions, our model yields mean absolute errors of 0.11 – 0.25 eV on test sets and utilizes under 100 data points per reaction intermediate. This model is integrated with a microkinetic model to identify promising catalysts. Modifying Pt nanoclusters with IB, IIB, and post-transition elements like Cu and Sn increases dehydrogenation rates, reduces unselective reactions, and lowers Pt utilization, consistent with prior experiments. This work presents a scalable and efficient framework for designing bimetallic catalysts for dehydrogenating hydrogen carriers.
     </p>
     <p>
-        <a href="https://chemrxiv.org/engage/chemrxiv/browse-dashboard">Details of the project can be found in our paper.</a>
+        <a href="https://chemrxiv.org/engage/chemrxiv/article-details/668ba6975101a2ffa8be74df">Harnessing Physics-inspired Machine Learning to Design Nanocluster Catalysts for Dehydrogenating Liquid Organic Hydrogen Carriers</a>
     </p>
     <p>
         <a href="https://github.com/CLinSim/ML_LOHC">Here are the codes of the machine learning model and the microkinetic model.</a>
+    </p>
+</div>
+
+<h2>Year 2023: Solvent effect discoverred for plasmon-enhanced hydrogen evolution reaction</h2>
+    
+<div class="project-summary">
+    <img src="RP2023_01_PEEC HER.png" alt="Project Summary Image">
+    <p>
+Research background: Plasmon-enhanced electrochemistry (PEEC) has been observed to facilitate electrochemical reactions by converting light energy to chemical energy. However, even though the PEEC effect was observed to be solvent-dependent, the mechanism of how plasmon affects the liquid environment of an electrochemical reaction was unknown. Using ensemble-based methodologies on macroscopic electrodes fails to measure electron-transfer kinetics due to constraints from mass transport and the averaging effect. 
+    </p>
+    <p>
+Main conclusions: We have employed nanoparticle impact electrochemistry (NIE), a newly developed electroanalytical technique capable of measuring electrochemical dynamics at a single-nanoparticle level under optimal mass transport conditions, along with microscopic electron-transfer theory for data interpretation. By investigating the plasmon enhanced hydrogen evolution reaction (HER) at individual silver nanoparticles (AgNPs), we have clearly revealed the previously unknown influence of solvent effects within the PEEC mechanism. This finding suggests an additional approach to optimize plasmon-assisted electrocatalysis and electrosynthesis systems.
+    </p>
+    <p>
+        <a href="https://pubs.acs.org/doi/abs/10.1021/acs.nanolett.3c03091">Unveiling the Solvent Effect in Plasmon Enhanced Electrochemistry via the Nanoparticle-Impact Technique</a>
     </p>
 </div>
 
