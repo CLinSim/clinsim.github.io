@@ -67,38 +67,6 @@
     </nav>
 </main>
 
-<h2>Comments</h2>
-    <div id="comments"></div>
-    <textarea id="commentText" placeholder="Write a comment..."></textarea>
-    <button onclick="submitComment()">Submit</button>
-
-    <script>
-        function submitComment() {
-            var commentText = document.getElementById('commentText').value;
-            db.collection("comments").add({
-                text: commentText,
-                timestamp: firebase.firestore.FieldValue.serverTimestamp()
-            }).then(() => {
-                document.getElementById('commentText').value = '';
-                loadComments();
-            });
-        }
-
-        function loadComments() {
-            db.collection("comments").orderBy("timestamp", "desc").get().then((querySnapshot) => {
-                var commentsDiv = document.getElementById('comments');
-                commentsDiv.innerHTML = '';
-                querySnapshot.forEach((doc) => {
-                    var comment = document.createElement('p');
-                    comment.textContent = doc.data().text;
-                    commentsDiv.appendChild(comment);
-                });
-            });
-        }
-
-        // Load comments when the page loads
-        window.onload = loadComments;
-    </script>
 
 </body>
 </html>
